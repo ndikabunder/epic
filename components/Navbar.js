@@ -131,7 +131,7 @@ export default function Navbar() {
       >
         <ul className='flex flex-col space-y-3'>
           {menuNav.map((item) => (
-            <li>
+            <li key={item.id}>
               <Link href={item.Link}>{item.name}</Link>
             </li>
           ))}
